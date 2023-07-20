@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ teacher.name }}'s Details</title>
+</head>
+<body>
+    <h1>{{ teacher.name }}'s Details</h1>
+    <p>Name: {{ teacher.name }}</p>
+    <p>Age: {{ teacher.age }}</p>
+    <a href="{% url 'teacher_update' teacher.pk %}">Edit</a>
+    <a href="{% url 'teacher_delete' teacher.pk %}">Delete</a>
+    <a href="{% url 'teacher_list' %}">Back to Teacher List</a>
+</body>
+</html>
